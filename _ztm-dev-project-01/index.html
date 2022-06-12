@@ -29,26 +29,45 @@
 
             <!-- HTML Forms Practice -->
             <div class="contact">
-                <form action="">
-                    First Name: <input type="text"><br>
-                    Last Name: <input type="text"><br>
+                <form action="GET" action="action.php">
+                    First Name: <input type="text" name="firstname"><br>
+                    Last Name: <input type="text" name="lastname"><br>
 
+                    <!-- Radio Buttons -->
                     Gender:<br>
-                    Male<input type="radio" name="gender" id="">
-                    Female<input type="radio" name="gender" id="">
-                    Klingon<input type="radio" name="gender" id=""><br>
+                    Male<input type="radio" name="gender" value="Male" id="">
+                    Female<input type="radio" name="gender" value="Female" id="">
+                    Klingon<input type="radio" name="gender" value="Klingon" id=""><br>
 
+                    <!-- Checkboxes -->
                     Pets:<br>
-                    <input type="checkbox" name="pets" id="">Dog
-                    <input type="checkbox" name="pets" id="">Cat
-                    <input type="checkbox" name="pets" id="">Snake
-                    <input type="checkbox" name="pets" id="">Hamster
-                    <input type="checkbox" name="pets" id="">Other<br>
+                    <input type="checkbox" name="dog" id="">Dog
+                    <input type="checkbox" name="cat" id="">Cat
+                    <input type="checkbox" name="snake" id="">Snake
+                    <input type="checkbox" name="hamster" id="">Hamster
+                    <input type="checkbox" name="other" id="">Other<br>
 
-                    Birthday: <input type="date" name="enter birthday" id="">
-                    Email: <input type="email" required><br>
+                    <!-- Input Fields -->
+                    Birthday: <input type="date" name="birthday" id="">
+                    Email: <input type="email" name="email" required><br>
+                    Passowrd: <input type="password" name="password" minlength="5" maxlength="21"><br>
+
+                    <!-- Submit Buttons -->
                     <input type="submit" value="SUBMIT">
-                    <input type="reset" value="Start Over">
+                    <input type="reset" value="Start Over"><br>
+
+                    <!-- Dropdown lists -->
+                    Cars:<br>
+                    <select name="cars" id="">
+                        <option value="Audi">Audi</option>
+                        <option value="BMW">BMW</option>
+                        <option value="Mercedes-Benz">Mercedes-Benz</option>
+                        <option value="Nissan">Nissan</option>
+                    </select>
+
+
+
+
                 </form>
             </div>
         </main>
